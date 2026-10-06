@@ -1,8 +1,4 @@
-STREAMING_CHUNK:Permitting search crawlers and linking sitemap...
-
 User-agent: *
 Allow: /
-
-Ubicación del Sitemap para rastreadores de Google, Bing y Yahoo
 
 Sitemap: https://easyyouagency.com/sitemap.xml
