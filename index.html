@@ -3,19 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Google tag (gtag.js) - Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XTF8MD5B0X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XTF8MD5B0X');
+    </script>
     
     <!-- Favicon / Icono para Google Search y Navegadores -->
     <link rel="icon" type="image/jpeg" href="https://i.ibb.co/3YcwNWLg/Create-website-icon-with-logo-20260922190846.jpg">
     <link rel="shortcut icon" type="image/jpeg" href="https://i.ibb.co/3YcwNWLg/Create-website-icon-with-logo-20260922190846.jpg">
     <link rel="apple-touch-icon" href="https://i.ibb.co/3YcwNWLg/Create-website-icon-with-logo-20260922190846.jpg">
 
-    <!-- SEO & Metadata con etiqueta title corregida -->
+    <!-- SEO & Metadata -->
     <title>Te entregamos leads mientras mejoramos la imagen de tu marca</title>
     <meta name="title" content="Te entregamos leads mientras mejoramos la imagen de tu marca">
     <meta name="description" content="Escalamos entre un x1,5 y un x3 tu facturación, entra para calcular gratis el retorno de tu inversión. ¿Escalamos juntos?">
     <meta name="keywords" content="EasyYou Agency, agencia de marketing digital, diseño web, desarrollo web, branding, gestión de redes sociales, SEO, publicidad digital, estrategia digital, marca personal, escalar infroproductos">
     
-    <!-- Open Graph / Meta para compartir en redes y buscadores -->
+    <!-- Open Graph / Redes Sociales -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://easyyouagency.com/">
     <meta property="og:title" content="Buscamos leads y mejoramos la imagen de tu marca">
@@ -246,7 +256,7 @@
             pointer-events: none;
         }
 
-        /* 5. COVERFLOW CAROUSEL (Mobile & Touch Optimized) */
+        /* 5. COVERFLOW CAROUSEL */
         .carousel-viewport {
             width: 100%;
             overflow: hidden;
@@ -749,7 +759,7 @@
                             </div>
                         </div>
 
-                        <!-- 5. Jimyus (Penúltimo) -->
+                        <!-- 5. Jimyus -->
                         <div class="carousel-slide w-[260px] sm:w-[280px] md:w-[300px] px-2.5">
                             <div class="rounded-xl border border-white/10 bg-surface p-3 transition-colors hover:border-white/20">
                                 <div class="video-wrapper aspect-[9/16] rounded-lg overflow-hidden bg-black border border-white/5">
@@ -761,7 +771,7 @@
                             </div>
                         </div>
 
-                        <!-- 6. Preguntas Espontáneas (Último) -->
+                        <!-- 6. Preguntas Espontáneas -->
                         <div class="carousel-slide w-[260px] sm:w-[280px] md:w-[300px] px-2.5">
                             <div class="rounded-xl border border-white/10 bg-surface p-3 transition-colors hover:border-white/20">
                                 <div class="video-wrapper aspect-[9/16] rounded-lg overflow-hidden bg-black border border-white/5">
@@ -784,7 +794,7 @@
                 </button>
             </div>
 
-            <!-- MINI BLOQUE: ALGUNAS DE LAS WEBS QUE HEMOS REALIZADO A CLIENTES -->
+            <!-- MINI BLOQUE: WEBS REALIZADAS -->
             <div class="mt-16 pt-12 border-t border-white/5 reveal-on-scroll">
                 <div class="text-center mb-8">
                     <span class="text-xs font-mono tracking-widest text-brandAccent uppercase inline-block mb-1.5 font-semibold">
@@ -1877,7 +1887,6 @@
             // Comprobación inicial de cookies
             const currentPrefs = getStoredPreferences();
             if (!currentPrefs) {
-                // Mostrar banner con retraso suave para permitir apreciar el hero
                 setTimeout(showBanner, 1200);
             }
         });
