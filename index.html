@@ -1137,15 +1137,17 @@
             <!-- GRID DE LOS 6 SERVICIOS INDIVIDUALES -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
                 <!-- 1. Desarrollo Web, SEO y GEO -->
-                <div class="reveal-on-scroll p-6 sm:p-8 rounded-3xl bg-surface/80 backdrop-blur-lg border border-white/10 hover:border-brandAccent/50 transition-all duration-300 flex flex-col justify-between group hover:shadow-[0_10px_30px_rgba(56,189,248,0.12)]" style="transition-delay: 100ms;">
+                <div onclick="openServiceLanding('web')" class="service-card-trigger cursor-pointer reveal-on-scroll p-6 sm:p-8 rounded-3xl bg-surface/80 backdrop-blur-lg border border-white/10 hover:border-brandAccent/50 transition-all duration-300 flex flex-col justify-between group hover:shadow-[0_10px_30px_rgba(56,189,248,0.15)] hover:-translate-y-1" style="transition-delay: 100ms;">
                     <div>
-                        <div class="w-12 h-12 rounded-2xl bg-brandAccent/10 border border-brandAccent/25 flex items-center justify-center mb-6 group-hover:border-brandAccent/50 group-hover:bg-brandAccent/20 transition-all text-brandAccent shadow-[0_0_15px_rgba(56,189,248,0.2)]">
-                            <i class="fa-solid fa-laptop-code text-xl"></i>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 rounded-2xl bg-brandAccent/10 border border-brandAccent/25 flex items-center justify-center group-hover:border-brandAccent/50 group-hover:bg-brandAccent/20 transition-all text-brandAccent shadow-[0_0_15px_rgba(56,189,248,0.2)]">
+                                <i class="fa-solid fa-laptop-code text-xl"></i>
+                            </div>
+                            <span class="text-xs font-mono text-zinc-400 group-hover:text-brandAccent flex items-center gap-1.5 transition-colors">
+                                Ver detalles <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </span>
                         </div>
-                        <h4 class="text-2xl font-display font-bold text-white mb-4 group-hover:text-brandAccent transition-colors">Desarrollo Web, SEO y GEO</h4>
-                        <p class="text-zinc-400 text-sm leading-relaxed mb-6">
-                            Arquitectura web orientada a la venta, optimización SEO tradicional y posicionamiento GEO para garantizar que modelos de IA (ChatGPT, Gemini, Perplexity) recomienden activamente tu marca.
-                        </p>
+                        <h4 class="text-2xl font-display font-bold text-white mb-6 group-hover:text-brandAccent transition-colors">Desarrollo Web, SEO y GEO</h4>
                     </div>
                     <div class="pt-4 border-t border-white/10 flex justify-between items-end">
                         <div class="price-blurred price-field">
@@ -1156,15 +1158,17 @@
                 </div>
 
                 <!-- 2. Campañas Publicitarias Grabadas con IA -->
-                <div class="reveal-on-scroll p-6 sm:p-8 rounded-3xl bg-surface/80 backdrop-blur-lg border border-white/10 hover:border-brandAccent/50 transition-all duration-300 flex flex-col justify-between group hover:shadow-[0_10px_30px_rgba(56,189,248,0.12)]" style="transition-delay: 150ms;">
+                <div onclick="openServiceLanding('ia')" class="service-card-trigger cursor-pointer reveal-on-scroll p-6 sm:p-8 rounded-3xl bg-surface/80 backdrop-blur-lg border border-white/10 hover:border-brandAccent/50 transition-all duration-300 flex flex-col justify-between group hover:shadow-[0_10px_30px_rgba(56,189,248,0.15)] hover:-translate-y-1" style="transition-delay: 150ms;">
                     <div>
-                        <div class="w-12 h-12 rounded-2xl bg-brandAccent/10 border border-brandAccent/25 flex items-center justify-center mb-6 group-hover:border-brandAccent/50 group-hover:bg-brandAccent/20 transition-all text-brandAccent shadow-[0_0_15px_rgba(56,189,248,0.2)]">
-                            <i class="fa-solid fa-wand-magic-sparkles text-xl"></i>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 rounded-2xl bg-brandAccent/10 border border-brandAccent/25 flex items-center justify-center group-hover:border-brandAccent/50 group-hover:bg-brandAccent/20 transition-all text-brandAccent shadow-[0_0_15px_rgba(56,189,248,0.2)]">
+                                <i class="fa-solid fa-wand-magic-sparkles text-xl"></i>
+                            </div>
+                            <span class="text-xs font-mono text-zinc-400 group-hover:text-brandAccent flex items-center gap-1.5 transition-colors">
+                                Ver detalles <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </span>
                         </div>
-                        <h4 class="text-2xl font-display font-bold text-white mb-4 group-hover:text-brandAccent transition-colors">Campañas Publicitarias con IA</h4>
-                        <p class="text-zinc-400 text-sm leading-relaxed mb-6">
-                            Producción de anuncios y piezas audiovisuales de alto impacto con IA hiperrealista. Simula rodajes complejos sin actores ni alquiler de estudios, ahorrando miles de euros en producción tradicional.
-                        </p>
+                        <h4 class="text-2xl font-display font-bold text-white mb-6 group-hover:text-brandAccent transition-colors">Campañas Publicitarias con IA</h4>
                     </div>
                     <div class="pt-4 border-t border-white/10 flex justify-between items-end">
                         <div class="price-blurred price-field">
@@ -1176,15 +1180,17 @@
                 </div>
 
                 <!-- 3. Contenido Estratégico para Redes Sociales -->
-                <div class="reveal-on-scroll p-6 sm:p-8 rounded-3xl bg-surface/80 backdrop-blur-lg border border-white/10 hover:border-brandAccent/50 transition-all duration-300 flex flex-col justify-between group hover:shadow-[0_10px_30px_rgba(56,189,248,0.12)]" style="transition-delay: 200ms;">
+                <div onclick="openServiceLanding('redes')" class="service-card-trigger cursor-pointer reveal-on-scroll p-6 sm:p-8 rounded-3xl bg-surface/80 backdrop-blur-lg border border-white/10 hover:border-brandAccent/50 transition-all duration-300 flex flex-col justify-between group hover:shadow-[0_10px_30px_rgba(56,189,248,0.15)] hover:-translate-y-1" style="transition-delay: 200ms;">
                     <div>
-                        <div class="w-12 h-12 rounded-2xl bg-brandAccent/10 border border-brandAccent/25 flex items-center justify-center mb-6 group-hover:border-brandAccent/50 group-hover:bg-brandAccent/20 transition-all text-brandAccent shadow-[0_0_15px_rgba(56,189,248,0.2)]">
-                            <i class="fa-solid fa-mobile-screen text-xl"></i>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 rounded-2xl bg-brandAccent/10 border border-brandAccent/25 flex items-center justify-center group-hover:border-brandAccent/50 group-hover:bg-brandAccent/20 transition-all text-brandAccent shadow-[0_0_15px_rgba(56,189,248,0.2)]">
+                                <i class="fa-solid fa-mobile-screen text-xl"></i>
+                            </div>
+                            <span class="text-xs font-mono text-zinc-400 group-hover:text-brandAccent flex items-center gap-1.5 transition-colors">
+                                Ver detalles <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </span>
                         </div>
-                        <h4 class="text-2xl font-display font-bold text-white mb-4 group-hover:text-brandAccent transition-colors">Contenido Estratégico para Redes</h4>
-                        <p class="text-zinc-400 text-sm leading-relaxed mb-6">
-                            Servicio integral de autoridad y retención digital. Incluye estrategia, guionización, generación, edición profesional y publicación directa en tus canales (compromiso mínimo de 3 meses).
-                        </p>
+                        <h4 class="text-2xl font-display font-bold text-white mb-6 group-hover:text-brandAccent transition-colors">Contenido Estratégico para Redes</h4>
                     </div>
                     <div class="pt-4 border-t border-white/10 flex justify-between items-end">
                         <span class="text-3xl font-mono font-bold text-white price-blurred price-field">350€<span class="text-sm text-zinc-400 font-sans font-normal">/mes</span></span>
@@ -1193,15 +1199,17 @@
                 </div>
 
                 <!-- 4. Red de Creadores de Contenido UGC -->
-                <div class="reveal-on-scroll p-6 sm:p-8 rounded-3xl bg-surface/80 backdrop-blur-lg border border-white/10 hover:border-brandAccent/50 transition-all duration-300 flex flex-col justify-between group hover:shadow-[0_10px_30px_rgba(56,189,248,0.12)]" style="transition-delay: 250ms;">
+                <div onclick="openServiceLanding('ugc')" class="service-card-trigger cursor-pointer reveal-on-scroll p-6 sm:p-8 rounded-3xl bg-surface/80 backdrop-blur-lg border border-white/10 hover:border-brandAccent/50 transition-all duration-300 flex flex-col justify-between group hover:shadow-[0_10px_30px_rgba(56,189,248,0.15)] hover:-translate-y-1" style="transition-delay: 250ms;">
                     <div>
-                        <div class="w-12 h-12 rounded-2xl bg-brandAccent/10 border border-brandAccent/25 flex items-center justify-center mb-6 group-hover:border-brandAccent/50 group-hover:bg-brandAccent/20 transition-all text-brandAccent shadow-[0_0_15px_rgba(56,189,248,0.2)]">
-                            <i class="fa-solid fa-user-group text-xl"></i>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 rounded-2xl bg-brandAccent/10 border border-brandAccent/25 flex items-center justify-center group-hover:border-brandAccent/50 group-hover:bg-brandAccent/20 transition-all text-brandAccent shadow-[0_0_15px_rgba(56,189,248,0.2)]">
+                                <i class="fa-solid fa-user-group text-xl"></i>
+                            </div>
+                            <span class="text-xs font-mono text-zinc-400 group-hover:text-brandAccent flex items-center gap-1.5 transition-colors">
+                                Ver detalles <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </span>
                         </div>
-                        <h4 class="text-2xl font-display font-bold text-white mb-4 group-hover:text-brandAccent transition-colors">Red de Creadores UGC</h4>
-                        <p class="text-zinc-400 text-sm leading-relaxed mb-6">
-                            Activación y coordinación de creadores reales que generan prueba social orgánica, validan tu producto y dirigen tráfico cualificado hacia tu embudo publicando en sus propias cuentas.
-                        </p>
+                        <h4 class="text-2xl font-display font-bold text-white mb-6 group-hover:text-brandAccent transition-colors">Red de Creadores UGC</h4>
                     </div>
                     <div class="pt-4 border-t border-white/10 flex justify-between items-end">
                         <span class="text-3xl font-mono font-bold text-white price-blurred price-field">150€</span>
@@ -1210,15 +1218,17 @@
                 </div>
 
                 <!-- 5. Gestión e Implantación de Setters y Closers -->
-                <div class="reveal-on-scroll p-6 sm:p-8 rounded-3xl bg-surface/80 backdrop-blur-lg border border-white/10 hover:border-brandAccent/50 transition-all duration-300 flex flex-col justify-between group hover:shadow-[0_10px_30px_rgba(56,189,248,0.12)]" style="transition-delay: 300ms;">
+                <div onclick="openServiceLanding('setters')" class="service-card-trigger cursor-pointer reveal-on-scroll p-6 sm:p-8 rounded-3xl bg-surface/80 backdrop-blur-lg border border-white/10 hover:border-brandAccent/50 transition-all duration-300 flex flex-col justify-between group hover:shadow-[0_10px_30px_rgba(56,189,248,0.15)] hover:-translate-y-1" style="transition-delay: 300ms;">
                     <div>
-                        <div class="w-12 h-12 rounded-2xl bg-brandAccent/10 border border-brandAccent/25 flex items-center justify-center mb-6 group-hover:border-brandAccent/50 group-hover:bg-brandAccent/20 transition-all text-brandAccent shadow-[0_0_15px_rgba(56,189,248,0.2)]">
-                            <i class="fa-solid fa-handshake text-xl"></i>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 rounded-2xl bg-brandAccent/10 border border-brandAccent/25 flex items-center justify-center group-hover:border-brandAccent/50 group-hover:bg-brandAccent/20 transition-all text-brandAccent shadow-[0_0_15px_rgba(56,189,248,0.2)]">
+                                <i class="fa-solid fa-handshake text-xl"></i>
+                            </div>
+                            <span class="text-xs font-mono text-zinc-400 group-hover:text-brandAccent flex items-center gap-1.5 transition-colors">
+                                Ver detalles <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </span>
                         </div>
-                        <h4 class="text-2xl font-display font-bold text-white mb-4 group-hover:text-brandAccent transition-colors">Gestión de Setters y Closers</h4>
-                        <p class="text-zinc-400 text-sm leading-relaxed mb-6">
-                            Selección, incorporación y gestión operativa de equipos de Appointment Setters y Closers de ventas. Un equipo comercial externo orientado a la prospectación, cualificación y cierre de reuniones de alto valor.
-                        </p>
+                        <h4 class="text-2xl font-display font-bold text-white mb-6 group-hover:text-brandAccent transition-colors">Gestión de Setters y Closers</h4>
                     </div>
                     <div class="pt-4 border-t border-white/10 flex justify-between items-end">
                         <span class="text-3xl font-mono font-bold text-white price-blurred price-field">150€</span>
@@ -1227,15 +1237,17 @@
                 </div>
 
                 <!-- 6. Desarrollo de Apps a Medida -->
-                <div class="reveal-on-scroll p-6 sm:p-8 rounded-3xl bg-surface/80 backdrop-blur-lg border border-white/10 hover:border-brandAccent/50 transition-all duration-300 flex flex-col justify-between group hover:shadow-[0_10px_30px_rgba(56,189,248,0.12)]" style="transition-delay: 350ms;">
+                <div onclick="openServiceLanding('apps')" class="service-card-trigger cursor-pointer reveal-on-scroll p-6 sm:p-8 rounded-3xl bg-surface/80 backdrop-blur-lg border border-white/10 hover:border-brandAccent/50 transition-all duration-300 flex flex-col justify-between group hover:shadow-[0_10px_30px_rgba(56,189,248,0.15)] hover:-translate-y-1" style="transition-delay: 350ms;">
                     <div>
-                        <div class="w-12 h-12 rounded-2xl bg-brandAccent/10 border border-brandAccent/25 flex items-center justify-center mb-6 group-hover:border-brandAccent/50 group-hover:bg-brandAccent/20 transition-all text-brandAccent shadow-[0_0_15px_rgba(56,189,248,0.2)]">
-                            <i class="fa-solid fa-mobile-button text-xl"></i>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 rounded-2xl bg-brandAccent/10 border border-brandAccent/25 flex items-center justify-center group-hover:border-brandAccent/50 group-hover:bg-brandAccent/20 transition-all text-brandAccent shadow-[0_0_15px_rgba(56,189,248,0.2)]">
+                                <i class="fa-solid fa-mobile-button text-xl"></i>
+                            </div>
+                            <span class="text-xs font-mono text-zinc-400 group-hover:text-brandAccent flex items-center gap-1.5 transition-colors">
+                                Ver detalles <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </span>
                         </div>
-                        <h4 class="text-2xl font-display font-bold text-white mb-4 group-hover:text-brandAccent transition-colors">Desarrollo de Apps a Medida</h4>
-                        <p class="text-zinc-400 text-sm leading-relaxed mb-6">
-                            Diseño y desarrollo de aplicaciones web progresivas (PWA) o nativas (iOS y Android) orientadas a retención y monetización con bases de datos en tiempo real, pasarelas Stripe, QR y notificaciones push.
-                        </p>
+                        <h4 class="text-2xl font-display font-bold text-white mb-6 group-hover:text-brandAccent transition-colors">Desarrollo de Apps a Medida</h4>
                     </div>
                     <div class="pt-4 border-t border-white/10 flex justify-between items-end">
                         <div class="price-blurred price-field">
@@ -1437,11 +1449,83 @@
                     <i class="fa-solid fa-cookie-bite text-sm text-brandAccent"></i>
                     <span>Preferencias de Cookies</span>
                 </button>
-                <a href="#" class="text-zinc-500 hover:text-brandAccent transition-colors text-xl" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/easyyouagency/?__pwa=1" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-brandAccent transition-colors text-xl" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 <span class="text-xs font-mono text-zinc-600">© 2026 Todos los derechos reservados.</span>
             </div>
         </div>
     </footer>
+
+    <!-- ========================================================= -->
+    <!-- LANDING DETALLADA DE SERVICIO (OVERLAY MODAL) -->
+    <!-- ========================================================= -->
+    <div id="service-landing-overlay" class="fixed inset-0 z-[70] bg-obsidian/95 backdrop-blur-2xl overflow-y-auto hidden opacity-0 transition-opacity duration-300" aria-modal="true" role="dialog">
+        <div class="min-h-screen flex flex-col justify-between max-w-4xl mx-auto px-4 sm:px-8 py-8 sm:py-12 relative">
+            
+            <!-- Top Nav Bar -->
+            <div class="flex items-center justify-between pb-6 border-b border-white/10">
+                <button onclick="closeServiceLanding()" class="inline-flex items-center gap-2 text-xs font-mono text-zinc-300 hover:text-brandAccent bg-white/5 hover:bg-white/10 border border-white/10 px-4 py-2.5 rounded-xl transition-all">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span>Volver a Tarifas</span>
+                </button>
+                <div class="font-display font-black tracking-tight text-base uppercase text-white">
+                    EASYYOU<span class="text-brandAccent">.</span>
+                </div>
+            </div>
+
+            <!-- Content Body -->
+            <div class="my-auto py-10 sm:py-14 space-y-8">
+                <div class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-brandAccent/10 border border-brandAccent/30 text-brandAccent text-xs font-mono font-semibold shadow-[0_0_20px_rgba(56,189,248,0.2)]">
+                    <i id="sl-icon" class="fa-solid fa-laptop-code"></i>
+                    <span id="sl-tag">SERVICIO ESPECIALIZADO</span>
+                </div>
+
+                <h2 id="sl-title" class="text-3xl sm:text-5xl md:text-6xl font-display font-extrabold text-white tracking-tight leading-tight">
+                    Título del Servicio
+                </h2>
+
+                <div class="p-6 sm:p-8 rounded-3xl bg-surface/90 border border-white/10 shadow-2xl space-y-6 relative overflow-hidden">
+                    <div class="absolute -right-20 -top-20 w-64 h-64 bg-brandAccent/10 rounded-full blur-3xl pointer-events-none"></div>
+                    
+                    <h3 class="text-xs font-mono uppercase tracking-widest text-brandAccent">Descripción y Alcance</h3>
+                    <p id="sl-description" class="text-base sm:text-lg text-zinc-300 leading-relaxed font-sans">
+                        Descripción detallada del servicio...
+                    </p>
+
+                    <div id="sl-bullets" class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4 border-t border-white/10 text-sm text-zinc-300">
+                        <!-- Puntos clave dinámicos -->
+                    </div>
+                </div>
+
+                <!-- Precio y CTA -->
+                <div class="p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-brandAccent/15 via-surface to-surface border border-brandAccent/30 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-[0_0_30px_rgba(56,189,248,0.15)]">
+                    <div>
+                        <span class="text-xs font-mono text-zinc-400 uppercase block mb-1">Inversión Estimada</span>
+                        <div id="sl-price-box" class="flex items-baseline gap-2">
+                            <span id="sl-price" class="text-3xl sm:text-4xl font-mono font-extrabold text-white">490€</span>
+                            <span id="sl-price-note" class="text-xs font-mono text-brandAccent"></span>
+                        </div>
+                        <p id="sl-locked-hint" class="hidden text-xs font-mono text-brandAccent mt-1">
+                            <i class="fa-solid fa-lock text-[10px] mr-1"></i> Desbloquea los precios en la web para ver el importe exacto.
+                        </p>
+                    </div>
+
+                    <a id="sl-whatsapp-btn" href="https://wa.me/34623179849" target="_blank" rel="noopener noreferrer" class="btn-magnetic w-full sm:w-auto bg-brandAccent hover:bg-[#2cb2ed] text-black font-bold py-4 px-8 rounded-2xl text-xs uppercase tracking-wider shadow-[0_0_25px_rgba(56,189,248,0.4)] text-center">
+                        <span class="btn-magnetic-fill"></span>
+                        <span class="btn-magnetic-content">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                            <span>Solicitar este servicio</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="pt-6 border-t border-white/10 flex items-center justify-between text-xs font-mono text-zinc-500">
+                <span>EASYYOU AGENCY</span>
+                <button onclick="closeServiceLanding()" class="text-zinc-400 hover:text-white underline">Cerrar ventana</button>
+            </div>
+        </div>
+    </div>
 
     <!-- ========================================================= -->
     <!-- COMPONENTE DE COOKIES INTEGRADO -->
@@ -1919,8 +2003,9 @@
             } catch(e) {}
 
             priceFields.forEach(field => {
-                field.addEventListener('click', () => {
+                field.addEventListener('click', (e) => {
                     if(field.classList.contains('price-blurred')) {
+                        e.stopPropagation();
                         const gate = document.getElementById('email-gate-container');
                         if(gate) {
                             gate.scrollIntoView({behavior: 'smooth', block: 'center'});
@@ -1930,6 +2015,174 @@
                         }
                     }
                 });
+            });
+
+            // =========================================================
+            // LÓGICA DE LANDING INDIVIDUAL POR SERVICIO
+            // =========================================================
+            const servicesData = {
+                web: {
+                    tag: 'DESARROLLO & POSICIONAMIENTO',
+                    icon: 'fa-solid fa-laptop-code',
+                    title: 'Desarrollo Web, SEO y GEO',
+                    description: 'Arquitectura web orientada a la venta, optimización SEO tradicional y posicionamiento GEO para garantizar que modelos de IA (ChatGPT, Gemini, Perplexity) recomienden activamente tu marca.',
+                    bullets: [
+                        'Diseño UI/UX de alta conversión adaptado a móvil',
+                        'Optimización técnica SEO on-page y velocidad extrema',
+                        'Estrategia GEO para recomendaciones en motores de IA',
+                        'Integración de analítica, píxeles y captación de leads'
+                    ],
+                    price: 'Desde 490€',
+                    note: 'Proyecto llave en mano',
+                    waText: 'Hola, me gustaría más información sobre Desarrollo Web, SEO y GEO'
+                },
+                ia: {
+                    tag: 'PRODUCCIÓN AUDIOVISUAL IA',
+                    icon: 'fa-solid fa-wand-magic-sparkles',
+                    title: 'Campañas Publicitarias con IA',
+                    description: 'Producción de anuncios y piezas audiovisuales de alto impacto con IA hiperrealista. Simula rodajes complejos sin actores ni alquiler de estudios, ahorrando miles de euros en producción tradicional.',
+                    bullets: [
+                        'Creatividades hiperrealistas optimizadas para Meta & TikTok Ads',
+                        'Guionización persuasiva enfocada en retención y CTR',
+                        'Múltiples variantes de ganchos visuales (Hooks) para testeo',
+                        'Entrega ágil sin costes logísticos ni de rodaje físico'
+                    ],
+                    price: 'Desde 350€',
+                    note: 'Pago único',
+                    waText: 'Hola, me interesa el servicio de Campañas Publicitarias con IA'
+                },
+                redes: {
+                    tag: 'AUTORIDAD & CRECIMIENTO ORGÁNICO',
+                    icon: 'fa-solid fa-mobile-screen',
+                    title: 'Contenido Estratégico para Redes',
+                    description: 'Servicio integral de autoridad y retención digital. Incluye estrategia, guionización, generación, edición profesional y publicación directa en tus canales (compromiso mínimo de 3 meses).',
+                    bullets: [
+                        'Calendario editorial y guiones estratégicos mensuales',
+                        'Edición dinámica de alto impacto y retención',
+                        'Gestión integral y publicación directa en tus perfiles',
+                        'Análisis de métricas y optimización continua de formatos'
+                    ],
+                    price: '350€/mes',
+                    note: 'Compromiso mín. 3 meses',
+                    waText: 'Hola, me interesa el servicio de Contenido Estratégico para Redes'
+                },
+                ugc: {
+                    tag: 'PRUEBA SOCIAL & TRÁFICO ORGÁNICO',
+                    icon: 'fa-solid fa-user-group',
+                    title: 'Red de Creadores UGC',
+                    description: 'Activación y coordinación de creadores reales que generan prueba social orgánica, validan tu producto y dirigen tráfico cualificado hacia tu embudo publicando en sus propias cuentas.',
+                    bullets: [
+                        'Selección de perfiles alineados con tu público objetivo',
+                        'Briefings creativos para maximizar credibilidad y clics',
+                        'Publicación nativa en cuentas de creadores hacia tu embudo',
+                        'Modelo escalable basado en rendimiento y comisiones'
+                    ],
+                    price: '150€',
+                    note: '+ comisiones por resultado',
+                    waText: 'Hola, me interesa activar una Red de Creadores UGC'
+                },
+                setters: {
+                    tag: 'EQUIPO COMERCIAL B2B / HIGH TICKET',
+                    icon: 'fa-solid fa-handshake',
+                    title: 'Gestión de Setters y Closers',
+                    description: 'Selección, incorporación y gestión operativa de equipos de Appointment Setters y Closers de ventas. Un equipo comercial externo orientado a la prospectación, cualificación y cierre de reuniones de alto valor.',
+                    bullets: [
+                        'Reclutamiento y formación de Setters y Closers especializados',
+                        'Guiones de cualificación, seguimiento y manejo de objeciones',
+                        'Gestión operativa diaria y control de KPIs de cierre',
+                        'Enfoque 100% orientado a conversión y retorno'
+                    ],
+                    price: '150€',
+                    note: '+ comisiones por cierre',
+                    waText: 'Hola, me interesa la Gestión de Setters y Closers'
+                },
+                apps: {
+                    tag: 'TECNOLOGÍA & PRODUCTO DIGITAL',
+                    icon: 'fa-solid fa-mobile-button',
+                    title: 'Desarrollo de Apps a Medida',
+                    description: 'Diseño y desarrollo de aplicaciones web progresivas (PWA) o nativas (iOS y Android) orientadas a retención y monetización con bases de datos en tiempo real, pasarelas Stripe, QR y notificaciones push.',
+                    bullets: [
+                        'Aplicaciones PWA o nativas para iOS y Android',
+                        'Integración con pasarelas de pago Stripe y suscripciones',
+                        'Bases de datos en tiempo real, sistemas QR y paneles admin',
+                        'Notificaciones push para maximizar retención de usuarios'
+                    ],
+                    price: 'Desde 800€',
+                    note: 'Pago único',
+                    waText: 'Hola, me gustaría solicitar presupuesto para Desarrollo de Apps a Medida'
+                }
+            };
+
+            const slOverlay = document.getElementById('service-landing-overlay');
+            const slIcon = document.getElementById('sl-icon');
+            const slTag = document.getElementById('sl-tag');
+            const slTitle = document.getElementById('sl-title');
+            const slDescription = document.getElementById('sl-description');
+            const slBullets = document.getElementById('sl-bullets');
+            const slPrice = document.getElementById('sl-price');
+            const slPriceNote = document.getElementById('sl-price-note');
+            const slLockedHint = document.getElementById('sl-locked-hint');
+            const slWhatsappBtn = document.getElementById('sl-whatsapp-btn');
+
+            window.openServiceLanding = function(serviceKey) {
+                const data = servicesData[serviceKey];
+                if (!data || !slOverlay) return;
+
+                slIcon.className = data.icon;
+                slTag.textContent = data.tag;
+                slTitle.textContent = data.title;
+                slDescription.textContent = data.description;
+
+                slBullets.innerHTML = data.bullets.map(item => `
+                    <div class="flex items-start gap-2.5">
+                        <i class="fa-solid fa-circle-check text-brandAccent mt-1 text-xs shrink-0"></i>
+                        <span>${item}</span>
+                    </div>
+                `).join('');
+
+                // Comprobar si los precios ya están desbloqueados
+                let isUnlocked = false;
+                try {
+                    isUnlocked = localStorage.getItem('easyyou_unlocked') === 'true';
+                } catch(e) {}
+
+                slPrice.textContent = data.price;
+                slPriceNote.textContent = data.note;
+
+                if (isUnlocked) {
+                    slPrice.classList.remove('price-blurred');
+                    slPriceNote.classList.remove('price-blurred');
+                    slLockedHint.classList.add('hidden');
+                } else {
+                    slPrice.classList.add('price-blurred');
+                    slPriceNote.classList.add('price-blurred');
+                    slLockedHint.classList.remove('hidden');
+                }
+
+                slWhatsappBtn.href = `https://wa.me/34623179849?text=${encodeURIComponent(data.waText)}`;
+
+                slOverlay.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+                requestAnimationFrame(() => {
+                    slOverlay.classList.remove('opacity-0');
+                    slOverlay.classList.add('opacity-100');
+                });
+            };
+
+            window.closeServiceLanding = function() {
+                if (!slOverlay) return;
+                slOverlay.classList.remove('opacity-100');
+                slOverlay.classList.add('opacity-0');
+                document.body.style.overflow = '';
+                setTimeout(() => {
+                    slOverlay.classList.add('hidden');
+                }, 300);
+            };
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && slOverlay && !slOverlay.classList.contains('hidden')) {
+                    closeServiceLanding();
+                }
             });
 
             // =========================================================
